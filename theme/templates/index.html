@@ -1,0 +1,173 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="page-header">
+  <h1 class="index-page-title">Notes on Data Science, Machine Learning, &amp; Python</h1>
+</div>
+<div class="homepage-blurb row">
+    <div class="col-sm-12">
+        <p><a href="{{ SITEURL }}/pages/about.html">I do software engineering. </a> I work with Python and Linux. Interested in machine learning and data visualization.</p>
+       
+</div>
+
+
+
+<hr/>
+
+<div class="row" id="Python">
+  <div class="col-sm-12">
+    <h2 class="homepage_category_title">Python</h2>
+  </div>
+  <div class="col-sm-12">
+    <div class="panel panel-default">
+	<div class="panel-heading">
+        <h3 class="panel-title">Basics</h3>
+      </div>
+	  
+      <div class="panel-body">
+        <ul>
+          {% for article in articles %}
+			{% if article.category.name == 'Python'  %}
+            <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
+			{% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+ 
+</div>
+
+
+<div class="row" id="Pandas">
+  <div class="col-sm-12">
+    <h2 class="homepage_category_title">Pandas</h2>
+  </div>
+  <div class="col-sm-12">
+    <div class="panel panel-default">
+	
+	  
+      <div class="panel-body">
+        <ul>
+          {% for article in articles %}
+			{% if article.category.name == 'pandas'  %}
+            <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
+			{% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+ 
+</div>
+
+
+<div class="row" id="Data_Visualization">
+  <div class="col-sm-12">
+    <h2 class="homepage_category_title">Data Visualization</h2>
+  </div>
+  <div class="col-sm-12">
+    <div class="panel panel-default">
+	
+	  
+      <div class="panel-body">
+        <ul>
+          {% for article in articles %}
+			{% if article.category.name == 'matplotlib'  %}
+            <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
+			{% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+ 
+</div>
+
+
+
+
+
+<div class="row" id="Jupyter">
+  <div class="col-sm-12">
+    <h2 class="homepage_category_title">Jupyter</h2>
+  </div>
+  <div class="col-sm-12">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <ul>
+          {% for article in articles if article.category.name == 'Jupyter' %}
+            <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
+          {% else %}
+            <li>Coming soon.</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" id="Linux">
+  <div class="col-sm-12">
+    <h2 class="homepage_category_title">Linux</h2>
+  </div>
+  <div class="col-sm-12">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <ul>
+          {% for article in articles if article.category.name == 'Linux' %}
+            <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
+          {% else %}
+            <li>Coming soon.</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" id="Regex">
+  <div class="col-sm-12">
+    <h2 class="homepage_category_title">Regex</h2>
+  </div>
+  <div class="col-sm-12">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <ul>
+          {% for article in articles if article.category.name == 'Regex' %}
+            <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
+          {% else %}
+            <li>Coming soon.</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="row" id="SQL">
+  <div class="col-sm-12">
+    <h2 class="homepage_category_title">SQL</h2>
+  </div>
+  <div class="col-sm-12">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <ul>
+          {% for article in articles if article.category.name == 'SQL' %}
+            <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
+          {% else %}
+            <li>Coming soon.</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+{% endblock content %}
