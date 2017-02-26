@@ -1,19 +1,13 @@
-Title: Samira Ouaaz
+Title: About me
 Slug: about
 Summary: About Samira Ouaaz
-Date: 2017-02-19 12:00
+Date: 2017-02-19
 Authors: Samira Ouaaz
 
 
+I design and build software.
 
--   Twitter: [@souaaz](https://twitter.com/souaaz)
+[Twitter](https://twitter.com/souaaz)
 
-## Curriculum Vitae
-
-### Education
-
-
-
-### Experience
-
+[Github](https://github.com/souaaz)
 

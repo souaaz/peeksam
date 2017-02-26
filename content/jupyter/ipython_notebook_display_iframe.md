@@ -1,5 +1,3 @@
-
-
 Title: Display iframe
 Date: 2016-05-01 12:00  
 Category: Jupyter 

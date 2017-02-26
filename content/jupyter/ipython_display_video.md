@@ -1,4 +1,3 @@
-
 Title: Display a video
 Date: 2016-05-01 12:00  
 Category: Jupyter 

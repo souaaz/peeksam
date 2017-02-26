@@ -1,3 +1,11 @@
+Title: Run A Python Script
+Date: 2016-05-01 12:00
+Category: jupyter
+Tags:
+Slug: ipython_run_script
+Authors: Samira Ouaaz
+Summary: 
+
 
 # Run A Python Script Inside IPython
 

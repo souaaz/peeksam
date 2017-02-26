@@ -11,8 +11,6 @@ Summary: ipython_display_image
 
 
 ## Display an image
-
-
 ```
 # Load the ipython display and image module
 from IPython.display import Image
@@ -30,16 +28,13 @@ display(Image(url='http://history.nasa.gov/ap11ann/kippsphotos/5903.jpg'))
 
 
 ## Display an svg
-
-
 ```
 # Load the svg module
 from IPython.display import SVG
 
 # Display an svg
-SVG(url='http://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg')
+SVG(url='https://upload.wikimedia.org/wikipedia/commons/1/1a/Roman_provinces_trajan.svg')
 ```
-
 
 
 
